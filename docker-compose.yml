@@ -8,7 +8,6 @@ services:
     volumes: 
       - ./www:/app
       - ./configs/php.ini:/etc/php5/apache2/conf.d/30-custom.ini
-      - ./configs/apache:/etc/apache2/sites-enabled
     links: 
       - php
       - mariadb
